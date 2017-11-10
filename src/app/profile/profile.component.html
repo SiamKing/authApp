@@ -1,1 +1,16 @@
 <h3>User Profile</h3>
+<div *ngIf="profile">
+  <h5><strong>Nickname: </strong>{{profile.nickname}}</h5>
+  <div class="row">
+    <div class="col-md-2">
+      <img class="thumbnail" style="width:100%" src="{{profile.picture}}" alt="{{profile.name}}">
+    </div>
+    <div class="col-md-10">
+      <ul class="list-group">
+        <li class="list-group-item"><strong>Email: </strong>{{profile.email}}</li>
+        <li class="list-group-item"><strong>Profile Last Updated: </strong>{{profile.updated_at}}</li>
+      </ul>
+    </div>
+  </div>
+
+</div>
